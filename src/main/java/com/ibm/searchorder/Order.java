@@ -1,6 +1,5 @@
 package com.ibm.searchorder;
 
-
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -36,11 +35,10 @@ public class Order {
 	}
 
 	public void setPrice(float price) {
-		if(price<=0) {
+		if (price <= 0) {
 			throw new IllegalArgumentException("Price cannot be negative");
 		}
 		this.price = price;
 	}
 
-	
 }

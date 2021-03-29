@@ -14,6 +14,11 @@ public class OrderSearchController {
 	@Autowired
 	OrderSearchService orderSearchService;
 
+	/**
+	 * Method that returns all order
+	 * 
+	 * @return all orders
+	 */
 	@GetMapping("/order")
 	List<Order> getOrders() {
 		return orderSearchService.getOrders();
